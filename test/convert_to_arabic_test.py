@@ -1,6 +1,6 @@
 import unittest
 
-from convert_to_arabic import ConvertToArabic
+from src.convert_to_arabic import ConvertToArabic
 
 
 class ConvertToArabicTest(unittest.TestCase):
@@ -17,3 +17,7 @@ class ConvertToArabicTest(unittest.TestCase):
 
     def test_1904(self):
         self.assertEqual(1904, self.convert_to_arabic.convert('MCMIV'))
+
+
+if __name__ == "__main__":
+    unittest.main()

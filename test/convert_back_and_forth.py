@@ -1,7 +1,7 @@
 import unittest
 
-from convert_to_arabic import ConvertToArabic
-from convert_to_roman import ConvertToRoman
+from src.convert_to_arabic import ConvertToArabic
+from src.convert_to_roman import ConvertToRoman
 
 
 class ConvertAllTests(unittest.TestCase):
@@ -14,3 +14,7 @@ class ConvertAllTests(unittest.TestCase):
             arabic = self.arabic_converter.convert(roman)
             print(roman)
             self.assertEqual(x, arabic)
+
+
+if __name__ == "__main__":
+    unittest.main()

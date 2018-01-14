@@ -1,6 +1,6 @@
 import unittest
 
-from convert_to_roman import ConvertToRoman
+from src.convert_to_roman import ConvertToRoman
 
 
 class ConvertToRomanTests(unittest.TestCase):
@@ -18,3 +18,6 @@ class ConvertToRomanTests(unittest.TestCase):
     def test_convert_1904(self):
         self.assertEqual('MCMIV', self.converter.convert(1904))
 
+
+if __name__ == "__main__":
+    unittest.main()

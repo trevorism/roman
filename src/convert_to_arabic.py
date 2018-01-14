@@ -3,10 +3,10 @@ class ConvertToArabic:
 
     def convert(self, roman):
         arabic = 0
-        x=0
+        x = 0
         while x < len(roman):
-            if x != len(roman)-1 and self.conversion_map[roman[x]] < self.conversion_map[roman[x+1]]:
-                arabic = arabic + self.conversion_map[roman[x+1]] - self.conversion_map[roman[x]]
+            if x != len(roman) - 1 and self.conversion_map[roman[x]] < self.conversion_map[roman[x + 1]]:
+                arabic = arabic + self.conversion_map[roman[x + 1]] - self.conversion_map[roman[x]]
                 x = x + 1
             else:
                 arabic = arabic + self.conversion_map[roman[x]]
